@@ -1,3 +1,9 @@
+/* CUSTOM PROPERTYS */
+:root {
+    --text-color: #333;
+    --site-bgc: #fff;
+}
+
 /* GLOBAL STYLES */
 html {
     height: 100%;
@@ -20,8 +26,8 @@ body {
     font-family: "Arial", sans-serif;
     font-style: 16px;
     line-height: 1.5;
-    background-color: #fff;
-    color: #222;
+    background-color: var(--site-bgc);
+    color: var(--text-color);
 }
 
 img {
@@ -40,6 +46,20 @@ ul {
     margin: 0;
 }
 
+/* VISUALLY HIDDEN */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* CONTAINER */
 .container{
@@ -69,20 +89,3 @@ ul {
         /* retina bg img */
 }
 /* //RETINA BG */
-
-
-/* VISUALLY HIDDEN */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-/* //VISUALLY HIDDEN */
